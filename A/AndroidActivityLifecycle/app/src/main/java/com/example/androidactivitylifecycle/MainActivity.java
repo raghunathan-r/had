@@ -1,5 +1,6 @@
 package com.example.androidactivitylifecycle;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -48,6 +49,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String name = textView.getText().toString();
                 Toast.makeText(MainActivity.this, name, Toast.LENGTH_SHORT).show();
+
+//                ALERT
+                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                builder.setMessage("Are you " + name + "y/n");
             }
         });
 

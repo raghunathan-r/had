@@ -78,7 +78,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Toast.makeText(MainActivity.this, "Media Player Stopped",
                         Toast.LENGTH_SHORT).show();
-                mediaPlayer.stop();
+                mediaPlayer.seekTo(starttime);
+                mediaPlayer.pause();
             }
         });
     }
