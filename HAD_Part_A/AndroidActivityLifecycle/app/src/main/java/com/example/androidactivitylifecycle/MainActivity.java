@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, "Activity Created", Toast.LENGTH_SHORT).show();
 
         WebView webView = findViewById(R.id.webview);
-        webView.loadUrl("https://www.tutorialspoint.com");
+        webView.loadUrl("https://www.google.com");
 
         ImageView imageView = findViewById(R.id.imageView);
         Button imageButton = findViewById(R.id.button);
@@ -37,7 +37,6 @@ public class MainActivity extends AppCompatActivity {
                     imageView.setImageResource(R.drawable.first);
                     flag[0] = 1;
                 }
-
             }
         });
 
@@ -48,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String name = textView.getText().toString();
-                System.out.println(name);
+                Toast.makeText(MainActivity.this, name, Toast.LENGTH_SHORT).show();
             }
         });
 

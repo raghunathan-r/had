@@ -10,13 +10,13 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     EditText result;
     String operatorPressed = " ";
-    Button one, two, three, four, five, six, seven, eight, nine;
+    Button one, two, three, four, five, six, seven, eight, nine, zero;
     Button plus, minus, multiply, division, mod, equal, clear, dot;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        result = findViewById(R.id.res);
+        result = findViewById(R.id.result);
         one = findViewById(R.id.one);
         two = findViewById(R.id.two);
         three = findViewById(R.id.three);
@@ -26,10 +26,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         seven = findViewById(R.id.seven);
         eight = findViewById(R.id.eight);
         nine = findViewById(R.id.nine);
+        zero = findViewById(R.id.zero);
         plus = findViewById(R.id.plus);
         minus = findViewById(R.id.minus);
         multiply = findViewById(R.id.multiply);
-        division = findViewById(R.id.division);
+        division = findViewById(R.id.devide);
         mod = findViewById(R.id.mod);
         equal = findViewById(R.id.equal);
         clear = findViewById(R.id.clear);
@@ -44,6 +45,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         seven.setOnClickListener(this);
         eight.setOnClickListener(this);
         nine.setOnClickListener(this);
+        zero.setOnClickListener(this);
         dot.setOnClickListener(this);
 
         plus.setOnClickListener(this);
@@ -105,7 +107,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 result.append("*");
                 operatorPressed = "*";
                 break;
-            case R.id.division:
+            case R.id.devide:
                 v: result.append("/");
                 operatorPressed = "/";
                 break;
