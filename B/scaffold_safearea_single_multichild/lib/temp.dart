@@ -125,6 +125,55 @@
 
 // Exercise - 2. Columns and row main and cross axis alignment
 
+// // BOXES DIAGONALLY
+// void main() {
+//   runApp(MaterialApp(
+//     home: Scaffold(
+//       appBar: AppBar(title: Text("Singel Multichild Scaffold"),),
+//       body: Column(
+//         mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//         children: [
+//           Row(children: [firstChild()], mainAxisAlignment: MainAxisAlignment.start,),
+//           Row(children: [secondChild()], mainAxisAlignment: MainAxisAlignment.center,),
+//           Row(children: [thirdChild()], mainAxisAlignment: MainAxisAlignment.end,),
+//         ],
+//       ),
+//     ),
+//   ));
+// }
+
+// BOXES ONE AFTER ANOTHER WITH EVEN SPACE
+// void main() {
+//   runApp(MaterialApp(
+//     home: Scaffold(
+//       appBar: AppBar(title: Text("Singel Multichild Scaffold"),),
+//       body: Row(
+//         crossAxisAlignment: CrossAxisAlignment.start,
+//         mainAxisAlignment: MainAxisAlignment.spaceAround,
+//         children: [
+//           firstChild(), secondChild(), thirdChild()
+//         ],
+//       ),
+//     ),
+//   ));
+// }
+
+// BOXES DOWN OF EACH OTHER WITH SPACE
+// void main() {
+//   runApp(MaterialApp(
+//     home: Scaffold(
+//       appBar: AppBar(title: Text("Singel Multichild Scaffold"),),
+//       body: Column(
+//         crossAxisAlignment: CrossAxisAlignment.start,
+//         mainAxisAlignment: MainAxisAlignment.spaceAround,
+//         children: [
+//           firstChild(), secondChild(), thirdChild()
+//         ],
+//       ),
+//     ),
+//   ));
+// }
+
 import 'package:flutter/material.dart';
 
 void main() {
